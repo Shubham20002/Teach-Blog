@@ -1,14 +1,21 @@
-import { useEffect, useState } from "react";
+import {Routes, Route } from "react-router-dom";
+import Postdetail from "./Postdetails";
+import CreatePost from "./CreatePost";
+import Navbar from "./Navbar";
+import Home from "./Home";
 
 function App() {
-  const [name,setNmae]=useState("");
-  useEffect(()=>{
-    document.title=name;
-  })
+ 
   return (
     <>
-    <input type="text" value={name} onChange={(e)=>setNmae(e.target.value)} />
-    <p>name: {name}</p>
+    <Navbar/>
+    <Routes>
+      <Route path="/home" element={<Home />} />
+      <Route path="/post" element={<Postdetail/>} />
+      <Route path='/create' element={<CreatePost/>} />
+    </Routes>
+
+
     </>
   );
 }
