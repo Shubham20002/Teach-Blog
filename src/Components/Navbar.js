@@ -1,8 +1,12 @@
+import {Link} from "react-router-dom"
 function Navbar() {
  
     return (
       <>
-    <h1>this is navbar</h1>
+    <ul id="nav">
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/createpost">Add Post</Link></li>
+    </ul>
   
       </>
     );

@@ -10,9 +10,9 @@ function App() {
     <>
     <Navbar/>
     <Routes>
-      <Route path="/home" element={<Home />} />
-      <Route path="/post" element={<Postdetail/>} />
-      <Route path='/create' element={<CreatePost/>} />
+      <Route path="/" element={<Home />} />
+      <Route path="/post/:id" element={<Postdetail/>} />
+      <Route path='/createpost' element={<CreatePost/>} />
     </Routes>
 
 
