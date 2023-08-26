@@ -1,5 +1,5 @@
 import {db} from '../firebase';
-import { collection, addDoc } from "firebase/firestore"; 
+import { collection, addDoc, } from "firebase/firestore"; 
 import { useFormInput } from '../hooks';
 
 function CreatePost() {

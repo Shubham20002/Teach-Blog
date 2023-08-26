@@ -7,14 +7,13 @@ import Home from "./Home";
 function App() {
  
   return (
-    <>
+    <> <div className="container">
     <Navbar/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/post/:id" element={<Postdetail/>} />
       <Route path='/createpost' element={<CreatePost/>} />
-    </Routes>
-
+    </Routes></div>
 
     </>
   );
