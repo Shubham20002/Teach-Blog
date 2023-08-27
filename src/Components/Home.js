@@ -10,7 +10,7 @@ function Home() {
     onSnapshot(collection(db,"Blog"), (snapshot) => {
        
         const Posts =snapshot.docs.map(doc => {
-         return {
+         return {id:doc.id,
           ...doc.data()}
         })
        console.log(Posts)
